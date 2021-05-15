@@ -63,7 +63,7 @@ public class NoteObject : MonoBehaviour
     	{
             canBePressed = false;
 
-            if(transform.position.y <= -0.3)
+            if(transform.position.y <= -0.33)
             {
 
                 GameManager.instance.NoteMissed();
