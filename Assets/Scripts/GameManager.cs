@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+	
 
 	public AudioSource theMusic;
 
@@ -36,6 +39,7 @@ public class GameManager : MonoBehaviour
 	public GameObject resultsScreen;
 	public Text percentHitText, normalsText, goodsText, perfectsText, missesText, rankText, finalScoreText;
 
+	
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +80,9 @@ public class GameManager : MonoBehaviour
 
         		percentHitText.text = percentHit.ToString("F1") + "%";
 
+
+        		
+
         		string rankVal = "F";
 
         		if(percentHit > 40)
@@ -102,6 +109,8 @@ public class GameManager : MonoBehaviour
         		rankText.text = rankVal;
 
         		finalScoreText.text = currentScore.ToString();
+
+
         	}
         }
     }
